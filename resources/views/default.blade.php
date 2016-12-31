@@ -22,17 +22,7 @@
   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Styles -->
-    <style>
-    html,
-    body {
-        /*background-color: #fff;*/
-        /*color: #636b6f;*/
-        /*font-family: 'Raleway', sans-serif;*/
-        font-weight: 100;
-        height: 100vh;
-        margin: 0;
-    }
-    </style>
+  <script src="{{asset('js/custom.js')}}" type="text/javascript"></script>
 </head>
 
 <body>

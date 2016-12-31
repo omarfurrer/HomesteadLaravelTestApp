@@ -23,10 +23,21 @@
   <button type="submit" class="btn btn-default">ADD</button>
 </form>
 
-  <ul class="todos-list">
+  <ul class="todos-list clearfix">
   @foreach($todos as $todo)
     <li class="todo-item">
     {{ $todo->title }}
+<span class="todo-delete">
+  
+    <form onsubmit="return ConfirmDelete()" action="{{route('todos.destroy',$todo->id)}}" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+    <button class="btn btn-sm">
+    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+    </button>
+</form>
+</span>
+
     </li>
   @endforeach
   </ul>
