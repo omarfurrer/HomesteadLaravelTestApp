@@ -36,7 +36,7 @@ class TodosController extends Controller
      */
     public function store(StoreTodoRequest $request)
     {
-      $todo =  App\Todo::create($request->all());
+      $todo =  Todo::create($request->all());
       return redirect()->route('todos.index');
 
     }
