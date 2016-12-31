@@ -1,0 +1,8 @@
+*.sqlite
+vendor/
+node_modules/
+public/storage
+storage/*.key
+.env.*.php
+.env.php
+.env
